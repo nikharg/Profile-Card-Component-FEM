@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+--Darkcyan: hsl(185, 75%, 39%);
+--Verydarkdesaturateblue: hsl(229, 23%, 23%);
+--Darkgrayishblue: hsl(227, 10%, 46%);
+--Darkgray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Kumbh-Sans", sans-serif;
+    font-size: 18px;
+    color: var(--Verydarkdesaturateblue);
+    overflow: hidden;
+}
+
+.main{
+    background-color: var(--Darkcyan);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container{
+    font-family: "Kumbh-Sans", sans-serif;
+    background-color: white;
+    width: 350px;
+    height:430px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 2;
+}
+.card-head{
+    font-family: "Kumbh-Sans";
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    width: 350px;
+    height: 150px;
+}
+.dp{
+    width: 110px;
+    height: 110px;
+    border: 6px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin: -50px auto 20px auto;
+    overflow: hidden;
+}
+.dp img{
+    width: 100px;
+    height: 100px;
+}
+.age, .city, .card-foot span{
+    color: var(--Darkgrayishblue);
+}
+.age 
+{
+    font-family: "Kumbh-Sans";
+    font-weight: 400;
+    padding-left: 5px;
+}
+.city{
+    font-family: "Kumbh-Sans";
+    padding: 10px 0 30px 0;
+}
+.card-foot{
+    font-family: "Kumbh-Sans";
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 50px;
+    border-top: 1px solid hsl(0, 0%, 59%, 0.2);
+    letter-spacing: 0.05em;
+}
+.card-foot h3 span{
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    padding-top: 5px;
+}
+.top, .bottom{
+    position: absolute;
+}
+.top{
+    transform: translate(-35%,-55%);
+}
+.bottom{
+    bottom: 0;
+    right: 0;
+    transform: translate(40%,65%);
+}
+@media screen and (max-width:706px){
+    .top{
+        transform: translate(-70%,-55%);
+    }
+    .bottom{
+        transform: translate(70%,55%);
+    }
+}
+@media screen and (max-height:700px){
+    .bottom{
+        transform: translate(70%,75%);
+    }
+}
+
+
+
+/* Attributions */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
